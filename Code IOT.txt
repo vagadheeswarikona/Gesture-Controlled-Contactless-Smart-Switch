@@ -1,0 +1,28 @@
+define r1 13
+
+int relayl= LOW:
+
+int obstaclePin 
+int hasObstacle 7: // This is our input pin HIGH
+
+void setup()
+{
+	pinMode(r), OUTPUT); 
+	pinMode (obstaclePin, INPUT); 
+	Serial.begin(9600);
+
+}
+
+void loop() 
+{
+	hasObstacle = digitalRead(obstaclePin); 
+	if (hasObstacle == LOW)
+	{
+
+		relayl= ~relayl;
+		digitalWrite(rl,relayl); 
+		delay(1000);
+	}
+
+delay(200);
+}
